@@ -1,0 +1,20 @@
+function TimChuPhoBien(Chuoi1 = [])
+{
+   const doituong = {};
+   var dem = 0;
+   var chuphobien = "";
+   for( var i of Chuoi1)
+   {
+       doituong[i] = doituong[i] + 1 || 1;
+   }
+
+   for(var j in doituong)
+   {
+       if(doituong[j] > dem)
+       {
+           dem = doituong[j];
+           chuphobien = j;
+       }
+   }
+    return chuphobien;  
+}

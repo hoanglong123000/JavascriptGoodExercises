@@ -1,0 +1,7 @@
+function KiemtraAnagram(ch1, ch2)
+{
+    var mch1 = ch1.split("");
+    var mch2 = ch2.split("");
+    var ketqua = (mch1.sort().toString().localeCompare(mch2.sort().toString()) == 0) ? true : false; 
+    return ketqua;
+}

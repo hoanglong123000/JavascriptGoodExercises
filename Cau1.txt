@@ -1,0 +1,14 @@
+function traveChuoidainhat(a = [])
+{
+    var Mangtam = a[0];
+    var Mangtamdodai = a[0].length;
+    for(var i = 0; i < a.length; i++)
+    {
+       if(a[i].length > Mangtamdodai)
+       {
+           Mangtamdodai = a[i].length;
+           Mangtam = a[i];
+       }
+    }
+    return Mangtam;
+}

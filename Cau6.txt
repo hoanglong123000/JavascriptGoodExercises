@@ -1,0 +1,11 @@
+function KiemtraSoArmStrong(n)
+{
+    var chuoiso = n.toString();
+    var tong = 0;
+    for(var i = 0; i < chuoiso.length; i++)
+	{
+	   tong += Math.pow(parseInt(chuoiso[i]), 3);
+	}
+    var ketqua = (n == tong) ? true : false;
+    return ketqua;
+}
